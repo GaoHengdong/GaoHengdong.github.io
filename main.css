@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-size: 1.6rem;
+}
+body ::selection {
+  background: #ecd078;
+  color: #ffffff;
+
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+a {
+  outline: none;
+}
