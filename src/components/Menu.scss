@@ -1,0 +1,58 @@
+@import "./commoncss/variables";
+@import "./commoncss/mixins";
+
+.menu {
+  position: relative;
+  font-weight: 100;
+  //   弹出的菜单
+  &__list {
+    box-shadow: 6px 6px 30px 2px rgba(0, 0, 0, 0.075);
+    z-index: $z-index-modal;
+    opacity: 0;
+    transform: scale(0.1, 0.1) translateZ(0);
+    transition: all 0.2s;
+    transform-origin: right top;
+    background-color: white;
+    width: 20rem;
+    position: absolute;
+    right: 0.3rem;
+    top: 2rem;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  &__label {
+    @include click;
+    position: relative;
+    z-index: $z-index-common;
+    transition: color 0.2s;
+    &:hover {
+      color: $clr-hover;
+    }
+  }
+  &__ul {
+    list-style: none;
+    margin: 1rem;
+
+    li {
+      color: white;
+      display: inline-block;
+      background-color: $clr-tag;
+      border-radius: 2px;
+      margin: 3px 5px;
+      padding: 2px 3px;
+      @include click;
+    }
+  }
+  &__checkbox {
+    opacity: 0;
+    &:checked {
+      & ~ .menu__list {
+        opacity: 1;
+        transform: scale(1);
+      }
+      & ~ .menu__label {
+        z-index: $z-index-modal;
+      }
+    }
+  }
+}

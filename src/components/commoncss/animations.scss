@@ -1,0 +1,12 @@
+@keyframes enter {
+  from {
+    position: relative;
+    opacity: 0;
+    top: -0.5rem;
+  }
+  to {
+    position: relative;
+    opacity: 1;
+    top: 0;
+  }
+}

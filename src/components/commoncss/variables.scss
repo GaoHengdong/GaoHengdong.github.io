@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+SC:300");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+$clr-main: #6ba174;
+$clr-font: #808080;
+$clr-selected: #ecd078;
+$clr-hover: #f6b55d;
+$clr-back: #f5f7f9;
+$clr-tag: #73b6ca;
+
+$font-main: "Noto Sans SC", sans-serif;
+$font-header: "Montserrat", sans-serif;
+
+$z-index-common: 0;
+$z-index-under: -1;
+$z-index-mask: 10;
+$z-index-modal: 11;

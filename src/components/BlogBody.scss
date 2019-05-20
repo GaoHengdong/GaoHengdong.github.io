@@ -1,0 +1,19 @@
+@import "./commoncss/variables";
+@import "./commoncss/mixins";
+
+.blog-body {
+  background-color: $clr-back;
+  padding: 4rem 2rem;
+  position: relative;
+
+  &__container {
+    @include responsive-width(32vw);
+  }
+  &__top {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    color: $clr-font;
+  }
+}

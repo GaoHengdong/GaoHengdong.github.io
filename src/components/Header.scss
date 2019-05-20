@@ -1,0 +1,87 @@
+@import "./commoncss/variables";
+@import "./commoncss/layout";
+
+.header {
+  display: flex;
+  padding: 2rem;
+  background-color: $clr-main;
+  color: white;
+  font-family: $font-header;
+  @include a-link-style(white, $clr-hover);
+  &__backbtn {
+    cursor: pointer;
+  }
+
+  &__ul {
+    list-style: none;
+    display: flex;
+
+    li {
+      flex-grow: 1;
+      text-transform: uppercase;
+      display: flex;
+      @include flex-center;
+      span {
+        padding-right: 0.9rem;
+      }
+    }
+
+    @media (max-width: 700px) {
+      z-index: $z-index-modal;
+      transform: scale(0.1, 0.1);
+      transform-origin: top right;
+      opacity: 0;
+      transition: all 0.2s;
+      display: flex;
+      box-sizing: border-box;
+      width: 15rem;
+      height: 16rem;
+      padding: 1.5rem 0 3rem 0;
+      position: absolute;
+      background-color: white;
+      border: 1px solid rgba($clr-main, 0.2);
+      border-radius: 10px;
+      top: 5rem;
+      right: 3rem;
+      a:link,
+      :visited {
+        color: $clr-font;
+        text-decoration: none;
+      }
+
+      flex-direction: column;
+      li {
+        flex-grow: 1;
+        display: flex;
+        @include flex-center;
+      }
+    }
+  }
+
+  &__togglebtn {
+    display: none;
+    @media (max-width: 700px) {
+      display: flex;
+      @include flex-center;
+    }
+  }
+
+  &__label {
+    @include click;
+    position: relative;
+    z-index: $z-index-common;
+  }
+
+  &__checkbox {
+    opacity: 0;
+    &:checked {
+      & ~ .header__ul {
+        transform: scale(1, 1);
+        opacity: 1;
+      }
+      & ~ .header__label {
+        z-index: $z-index-modal;
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.aboutme {
+  height: 100vh;
+  min-height: 660px;
+  position: relative;
+  top: -2px;
+  background-image: linear-gradient(
+    to bottom,
+    #6ba174,
+    #71a179,
+    #76a17d,
+    #7ca182,
+    #81a186,
+    #7ca38c,
+    #78a593,
+    #75a69a,
+    #67a8a9,
+    #5fa9ba,
+    #63a8ca,
+    #77a4d5
+  );
+  color: white;
+  font-weight: 100;
+  letter-spacing: 1px;
+  position: relative;
+
+  &__container {
+    max-width: 40rem;
+    min-width: 20rem;
+    position: absolute;
+    top: 8rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__card {
+    background-color: rgba(255, 255, 255, 0.295);
+    padding: 2rem;
+    border-radius: 3px;
+    margin-bottom: 3rem;
+  }
+  p {
+    margin: 1.5rem 0;
+    padding: 0.5rem;
+    text-shadow: 2px 2px 4px 8px rgba(0, 0, 0, 0.527);
+  }
+}

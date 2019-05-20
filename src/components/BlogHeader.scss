@@ -1,0 +1,75 @@
+@import "./commoncss/variables";
+@import "./commoncss/mixins";
+
+.blogheader {
+  &__container {
+    height: 20rem;
+    position: relative;
+    top: -0.2rem;
+    background-image: linear-gradient(
+      to bottom,
+      #6ba174,
+      #69a177,
+      #68a17a,
+      #67a17c,
+      #66a17f,
+      #66a181,
+      #65a183,
+      #65a185,
+      #65a187,
+      #65a18a,
+      #65a18c,
+      #65a18e
+    );
+    border-radius: 0 0 2rem 2rem;
+    z-index: $z-index-common;
+    -webkit-backface-visibility: hidden;
+    position: relative;
+  }
+  &__body {
+    padding-top: 4rem;
+    @include responsive-width(30vw);
+  }
+  &__image-box {
+    width: 60%;
+    display: flex;
+    justify-content: right;
+  }
+  &__icon {
+    font-size: 10rem;
+    color: white;
+    margin-left: 30%;
+  }
+  &__h1,
+  &__h2 {
+    color: white;
+    font-weight: 100;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+  }
+  &__h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    @media (max-width: 330px) {
+      font-size: 2rem;
+    }
+  }
+  &__h2 {
+    font-size: 1.6rem;
+  }
+  &__icons {
+    color: white;
+    display: flex;
+    margin-top: 1rem;
+    @include a-link-style(white, $clr-hover);
+  }
+  &__iconbox {
+    background-color: #ffffff60;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 4px;
+    margin-right: 2rem;
+    display: flex;
+    @include flex-center;
+  }
+}
