@@ -8,9 +8,6 @@ import BlogContent from "./BlogContent";
 import "./App.scss";
 
 class App extends React.Component {
-  componentDidUpdate() {
-    console.log(111);
-  }
   render() {
     return (
       <div className="app">
