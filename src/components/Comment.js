@@ -5,7 +5,7 @@ import Gitment from "gitment";
 export class Comment extends Component {
   componentDidMount() {
     const gitment = new Gitment({
-      id: this.props.id,
+      id: this.props.id.toString(),
       owner: "GaoHengdong",
       repo: "blogcomment",
       oauth: {

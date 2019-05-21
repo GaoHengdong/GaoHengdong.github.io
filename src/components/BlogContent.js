@@ -83,7 +83,6 @@ class BlogContent extends React.Component {
   };
 
   render() {
-    console.log(this.props.thisBlog);
     return (
       <>
         {this.renderContent()}
