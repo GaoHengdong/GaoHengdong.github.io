@@ -78,7 +78,7 @@ class BlogContent extends React.Component {
   };
   renderComment = () => {
     if (this.props.thisBlog) {
-      return <Comment id={12} />;
+      return <Comment id={this.props.thisBlog.id} />;
     }
   };
 

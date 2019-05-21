@@ -9,6 +9,7 @@ export class Comment extends Component {
     this.commentsRef = React.createRef();
   }
   componentDidMount() {
+    console.log(this.props.id.toString());
     const gitment = new Gitment({
       id: this.props.id.toString(),
       owner: "GaoHengdong",
