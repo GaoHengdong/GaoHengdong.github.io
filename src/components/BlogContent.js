@@ -5,6 +5,7 @@ import { connect } from "react-redux";
 import { fetchBlogList } from "../actions";
 import { tagColors, defaultColors } from "../datas/config";
 import Loader from "./Loader";
+import Comment from "./Comment";
 
 import "github-markdown-css";
 import "./BlogContent.scss";
@@ -75,8 +76,14 @@ class BlogContent extends React.Component {
     }
     return null;
   };
+  renderComment = () => {
+    if (this.props.thisBlog) {
+      return <Comment id={12} />;
+    }
+  };
 
   render() {
+    console.log(this.props.thisBlog);
     return (
       <>
         {this.renderContent()}
@@ -90,6 +97,7 @@ class BlogContent extends React.Component {
             <Loader />
           </div>
         </CSSTransition>
+        {this.renderComment()}
       </>
     );
   }
