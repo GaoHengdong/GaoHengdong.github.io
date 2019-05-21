@@ -1,8 +1,13 @@
 import React, { Component } from "react";
 import "gitment/style/default.css";
 import Gitment from "gitment";
+import "./Comment.scss";
 
 export class Comment extends Component {
+  constructor(props) {
+    super(props);
+    this.commentsRef = React.createRef();
+  }
   componentDidMount() {
     const gitment = new Gitment({
       id: this.props.id.toString(),
@@ -16,7 +21,7 @@ export class Comment extends Component {
     gitment.render("comments");
   }
   render() {
-    return <div id="comments" />;
+    return <div id="comments" className="comments" ref={this.commentsRef} />;
   }
 }
 

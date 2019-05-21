@@ -1,0 +1,31 @@
+@import "./commoncss/variables";
+@import "./commoncss/animations";
+
+.comments {
+  background-color: $clr-back;
+  min-width: 20rem;
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: 4.5rem;
+  padding-bottom: 6.5rem;
+  position: relative;
+  opacity: 0;
+  top: -0.5rem;
+  animation: enter 1s forwards;
+  .gitment-github-icon {
+    background-color: $clr-main;
+  }
+  @media (max-width: 767px) {
+    padding: 1.5rem;
+  }
+  @media (max-width: 410px) {
+    .gitment-editor-login {
+      font-size: 10px;
+      margin-top: -27px;
+      margin-right: 4px;
+    }
+    .gitment-editor-submit {
+      top: 15px;
+    }
+  }
+}
