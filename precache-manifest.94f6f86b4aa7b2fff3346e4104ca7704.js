@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "66ad80ec880d4876fa6ea244fd6df2cc",
+    "revision": "c853c8a7014f6962de8fb7cdb5877c7c",
     "url": "/blog/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/blog/static/css/2.9652530f.chunk.css"
   },
   {
-    "revision": "d7b21c7aca86b7335679",
+    "revision": "4b183204acd5c602ea6a",
     "url": "/blog/static/css/main.99952bfd.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/blog/static/js/2.f83d8f7b.chunk.js"
   },
   {
-    "revision": "d7b21c7aca86b7335679",
-    "url": "/blog/static/js/main.b8b98635.chunk.js"
+    "revision": "4b183204acd5c602ea6a",
+    "url": "/blog/static/js/main.d759feb8.chunk.js"
   },
   {
     "revision": "eeecc51c3b4e3b0a67a2",
@@ -56,8 +56,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/blog/static/media/特别鸣谢.28ca3634.md"
   },
   {
-    "revision": "90982b3ed0b016c1610dba5717477bae",
-    "url": "/blog/static/media/理解js中的this.90982b3e.md"
+    "revision": "fa3918d7cb37e7c222eff006e7b1ed13",
+    "url": "/blog/static/media/理解js中的this.fa3918d7.md"
   },
   {
     "revision": "728c4c8c97c1f80ed3c3939fa02842ea",

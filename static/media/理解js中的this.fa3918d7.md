@@ -149,7 +149,7 @@ maker 是 window 的 maker(当自身 local scope 和外部环境 global scope �
 
 1. 首先看有没有 new，如果有 new 的话 this 就是新的 object
 2. 看有没有 call apply bind，如果有的话那就是第一个参数
-3. 看他的 context object 也就是直属的 object
+3. 看他的 context object 也就是唤醒它的 object(多数情况是直属 object)
 4. 默认情况为 global object(strict mode 是 undefined)
 
 ## 参考文章
