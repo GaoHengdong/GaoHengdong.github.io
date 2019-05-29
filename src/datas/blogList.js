@@ -70,5 +70,13 @@ export default [
     description: "rem to px",
     classification: "technology",
     comment: false
+  },
+  {
+    id: 10,
+    title: "理解js中的this",
+    tags: ["js"],
+    description: "this in javascript",
+    classification: "study",
+    comment: true
   }
 ];
