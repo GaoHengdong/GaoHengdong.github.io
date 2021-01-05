@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "http://gaohengdong.github.io/blog/",
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "github-markdown-css": "^3.0.1",
     "gitment": "0.0.3",
     "node-sass": "^4.12.0",
